@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PT. Teknologi Canggih - Detail Magang</title>
+  <style>
+    :root {
+      --primary-color: #df1529;
+      --accent-color: #a51021;
+      --text-color: #222;
+      --bg-color: #ffffff;
+      --border-radius: 12px;
+      --transition-speed: 0.3s;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(223, 21, 41, 0.5);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    p.description {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .gallery img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+      border: 3px solid transparent;
+    }
+    .gallery img:hover,
+    .gallery img:focus {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(223, 21, 41, 0.6);
+      border-color: var(--primary-color);
+      outline: none;
+    }
+    .footer-container {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    a.back-button {
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(223, 21, 41, 0.5);
+      transition: background-color var(--transition-speed);
+      display: inline-block;
+      user-select: none;
+    }
+    a.back-button:hover,
+    a.back-button:focus {
+      background-color: var(--accent-color);
+      outline: none;
+    }
+    @media(max-width: 600px) {
+      .gallery img {
+        width: 90%;
+        height: auto;
+      }
+      main {
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PT. Teknologi Canggih</h1>
+  </header>
+  <main>
+    <h2>Tentang Tempat Magang</h2>
+    <p class="description">
+      Bekerjalah dengan teknologi mutakhir dalam pengembangan perangkat lunak dan dukungan TI. Tempat magang ini sangat cocok untuk penggemar teknologi yang ingin mengembangkan kemampuan teknis dan praktis.
+    </p>
+    <h2>Galeri Foto</h2>
+    <div class="gallery" aria-label="Galeri foto PT. Teknologi Canggih">
+      <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Pengembangan perangkat lunak di PT. Teknologi Canggih" tabindex="0" />
+      <img src="https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg" alt="Tim teknis melakukan kolaborasi" tabindex="0" />
+      <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Hardware dan software di PT. Teknologi Canggih" tabindex="0" />
+    </div>
+    <div class="footer-container">
+      <a href="index.html#internships" class="back-button" aria-label="Kembali ke halaman daftar tempat magang">Kembali ke Daftar Magang</a>
+    </div>
+  </main>
+</body>
+</html>
+
